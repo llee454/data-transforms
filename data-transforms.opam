@@ -1,0 +1,43 @@
+opam-version: "2.0"
+maintainer: "Larry Darryl Lee Jr."
+authors: [
+  "Larry Darryl Lee Jr."
+]
+synopsis: "A set of formally verified data transformation functions for use in data analysis"
+description: """
+This project defines a set of formally verified data transformation functions
+intended to be used in data analysis.
+"""
+license: "GPL-3.0-only"
+tags: []
+homepage: "https://github.com/llee454/data-transforms"
+doc: ""
+bug-reports: "https://github.com/llee454/data-transforms"
+pin-depends: [
+ ["ADB.1.4.3" "git+https://github.com/asemio/ADB.git#v1.4.3"]
+]
+depends: [
+  "ocaml" { = "4.10.0" }
+  "dune" { >= "2.6.0" }
+  "ocaml-lsp-server"
+  "ocamlformat" { = "0.15.0" }
+  "ppx_jane"
+  "core_kernel"
+  "core"
+  "lwt"
+  "lwt_ppx"
+  "csv-lwt"
+  "conf-libev"
+  "ADB" { = "1.4.3" }
+
+  "uuidm"
+  "re" { >= "1.9.0" & < "2.0.0" }
+  "yojson" { >= "1.7.0" & < "2.0.0" }
+  "ppx_deriving_yojson" { >= "3.5.2" }
+  "pg_query" { >= "0.9.6" }
+  "ppx_rapper" { >= "2.0.0" & < "3.0.0" }
+  "postgresql" { >= "4.0.0" & < "5.0.0" }
+  "caqti-driver-postgresql"
+
+  "coq" { = "8.12.0"} # needed to support Coqtail in Vim.
+]

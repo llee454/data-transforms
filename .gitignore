@@ -1,0 +1,22 @@
+_build
+_opam
+credentials.json
+
+# MacOS file system auxiliary files
+.DS_Store
+
+# Vim auxiliary files
+*.aux
+*.swp
+*.swo
+
+# Coq auxiliary files
+*.vos
+*.vok
+*.vo
+*.glob
+
+# Node.js
+node_modules
+package-lock.json
+package.json

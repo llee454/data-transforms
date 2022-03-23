@@ -1,0 +1,17 @@
+(coq.theory
+  (name verified)
+  (synopsis "Formally verified data transformation functions."))
+(library
+  (name verified)
+  (libraries
+    core
+    lwt
+    lwt.unix
+    owl-top
+    analytics_aux
+  )
+  (preprocess (pps
+    ppx_jane
+    lwt_ppx
+  ))
+)
